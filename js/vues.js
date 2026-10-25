@@ -160,7 +160,7 @@ function ficheEtape(etape) {
           ${b.texte ? `<p>${e(b.texte)}</p>` : ""}
           ${htmlAdresse(b.lieu)}
           ${htmlTrajet(b.trajet)}
-          <div class="actions">${boutonYAller(b.lieu)}</div>
+          <div class="actions">${boutonYAller(b.lieu)}${b.lien ? lienOfficiel(b.lien) : ""}</div>
         </article>`).join("")}
       </div></details>`;
   }
@@ -209,6 +209,7 @@ export function rendreInfos(conteneur) {
         ${info.lieu ? htmlAdresse(info.lieu) : ""}
         <div class="actions">
           ${(info.tel || []).map(n => `<a class="btn btn-action" href="${lienTel(n.numero)}">${e(n.libelle)} : ${e(n.numero)}</a>`).join("")}
+          ${(info.liens || []).map(l => `<a class="btn btn-secondaire" href="${e(l.url)}" target="_blank" rel="noopener">${e(l.libelle)}</a>`).join("")}
           ${info.lieu ? boutonYAller(info.lieu) : ""}
         </div>
       </div>
