@@ -1,6 +1,6 @@
 // Service worker : cache d'abord pour les fichiers du site, réseau seul pour les tuiles de carte.
 // Incrémenter VERSION à chaque modification de data.js (ou de tout autre fichier) pour forcer la mise à jour.
-const VERSION = "rome26-v3";
+const VERSION = "rome26-v5";
 
 const FICHIERS = [
   "./",
