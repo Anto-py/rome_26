@@ -1,0 +1,17 @@
+{
+  "name": "Roma 26",
+  "short_name": "Roma 26",
+  "description": "Le séjour à Rome, du 26 au 29 octobre 2026",
+  "lang": "fr",
+  "start_url": "./#maintenant",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0D1617",
+  "theme_color": "#0D1617",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
